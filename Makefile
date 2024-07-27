@@ -30,6 +30,7 @@ GCOV_DIR = report
 
 ############## TASK ##############
 all: $(TARGET) test gcov_report clean
+lib_static: $(TARGET)
 
 $(TARGET): $(OBJ)
 > $(AR) rcs $@ $(OBJ)
